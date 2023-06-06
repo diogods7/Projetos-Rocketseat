@@ -16,20 +16,33 @@ h1 span {
 body {
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
+	margin: 0;
 }
 
-p {
+p, #footer {
 	color: #7D7987;
 	font-size: 14px;
 	line-height: 28px;
+	font-weight: normal;
 }
 
 #hero {
 	width: 592px;
-	margin: auto;
+	margin: 0 auto 72px;
+
 }
 
-#balls{
-	right: 0;
-	bottom: 0;
+#hero img {
+	margin-bottom: 72px;
+}
+
+#footer a + a {
+	margin-left: 28px;
+}
+
+.line {
+	width: 568px;
+	height: 0px;
+	border: 1px #ECEFF2 solid;
+	margin: 0 auto 0;
 }
