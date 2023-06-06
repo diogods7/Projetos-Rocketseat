@@ -1,3 +1,9 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	margin: 0;
+}
+
 span, a {
 	color: #FF9900;
 }
@@ -13,17 +19,10 @@ h1 span {
 	font-weight: bold;
 }
 
-body {
-	font-family: 'Open Sans', sans-serif;
-	text-align: center;
-	margin: 0;
-}
-
 p, #footer {
 	color: #7D7987;
 	font-size: 14px;
 	line-height: 28px;
-	font-weight: normal;
 }
 
 #hero {
@@ -35,7 +34,7 @@ p, #footer {
 	margin-bottom: 72px;
 }
 
-#footer a + a {
+#footer a+a {
 	margin-left: 28px;
 }
 
