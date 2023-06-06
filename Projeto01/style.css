@@ -28,8 +28,7 @@ p, #footer {
 
 #hero {
 	width: 592px;
-	margin: 0 auto 72px;
-
+	margin: 0 auto 65px;
 }
 
 #hero img {
@@ -45,4 +44,10 @@ p, #footer {
 	height: 0px;
 	border: 1px #ECEFF2 solid;
 	margin: 0 auto 0;
+}
+
+#balls {
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
 }
