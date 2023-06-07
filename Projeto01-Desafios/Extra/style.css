@@ -1,6 +1,13 @@
-#upper{
-	margin: 62px auto;
+body {
+	margin: 0;
+	width: 1024px;
 	text-align: center;
+}
+
+#upper{
+	margin: 50px auto 62px;
+	text-align: center;
+	width: 626px;
 }
 
 h1 {
@@ -10,9 +17,54 @@ h1 {
 	line-height: auto;
 }
 
+h1 span {
+	color: #EE24FF;
+}
+
 p {
 	font-family: 'Open Sans', sans-serif;
-	color: #828282;
 	font-size: 15px;
 	line-height: 22px;
+	width: 540px;
+	margin: auto;
+	color: #828282;
 }
+
+p span {
+	color: #3F3D56;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a {
+	color: #3F3D56;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 15px;
+} 
+
+#upper p+p {
+	margin-top: 29px;
+}
+
+#footer {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	line-height: 147.7%;	
+	color: #828282;
+	margin-bottom: 0px;
+}
+
+/*#footer a+a {
+	margin-left: 41px;
+}*/
+
+.line {
+	width: 391px;
+	height: 0px;
+	border: 1px #ECEFF2 solid;
+	margin: 0 auto 0;
+}
+
+
