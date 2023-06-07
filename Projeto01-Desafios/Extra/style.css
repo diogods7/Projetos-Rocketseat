@@ -1,0 +1,18 @@
+#upper{
+	margin: 62px auto;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Dosis', sans-serif;
+	color: #3F3D56;
+	font-size: 32px;
+	line-height: auto;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	color: #828282;
+	font-size: 15px;
+	line-height: 22px;
+}
