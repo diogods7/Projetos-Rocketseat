@@ -1,9 +1,35 @@
 body{
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .page{
     width: 1000px;
     margin: 65px auto 0;
 }
-ç
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+
+ul {
+    gap: 48px;
+    list-style: none;
+    display: flex;
+}
+
+ul li a{
+    color: #1F1534;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    font-weight: bold;
+}
+
+h1,ul {
+    font-family: 'Mulish', sans-serif;
+}
