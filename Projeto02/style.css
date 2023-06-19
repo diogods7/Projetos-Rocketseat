@@ -21,6 +21,30 @@ ul {
     display: flex;
 }
 
+h1 {
+    font-size: 49px;
+    line-height: 56px;
+    color:  #1F1534;
+    font-weight: normal;
+    width: 490px;
+}
+
+p, footer {
+    font-size: 14px;
+    line-height: 28px;
+    color: #7D7987;
+}
+
+button {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 span{
+    color: #89C5CC;
+    font-weight: bold;
+}
+
 ul li a{
     color: #1F1534;
     text-decoration: none;
