@@ -3,7 +3,7 @@ body {
 
   font-family: "Open Sans", sans-serif;
 
-  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+  background: linear-gradient(180deg, rgb(227, 255, 248, 0) 82.08%, rgb(227, 255, 248, 0.38) 100%);
 
   min-height: 100vh;
 }
@@ -19,14 +19,15 @@ nav {
   justify-content: space-between;
   align-items: center;
 
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 
 ul {
   display: flex;
+  gap: 48px;
   list-style: none;
   margin: 0;
-  gap: 48px;
+  padding: 0;
 }
 
 a {
@@ -35,7 +36,7 @@ a {
 }
 
 ul li a {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 
 ul li a:hover {
@@ -43,9 +44,15 @@ ul li a:hover {
   opacity: 1;
 }
 
-h1,
-ul {
+ul,
+h1 {
   font-family: "Mulish", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 h1 {
@@ -63,18 +70,17 @@ h1 span {
   font-weight: bold;
 }
 
-section p {
+p {
   font-size: 14px;
   line-height: 28px;
   color: #7d7987;
 
   margin: 40px 0;
-  width: 400px;
 }
-
 
 button {
   color: white;
+  text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
 
   background: #69B99D;
@@ -82,18 +88,17 @@ button {
   padding: 14px 32px 15px;
 
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 10px;
-  align-items: center;
-  text-transform: uppercase;
 
   border-radius: 4px;
 
   cursor: pointer;
 }
 
-button:hover {
-  background: #4EA788;
+button:hover{
+  background: #4b8b75;
 }
 
 footer {
@@ -102,7 +107,7 @@ footer {
 
   text-align: center;
 
-  margin-top: 120px;
+  margin-top: 80px;
 }
 
 footer a {
@@ -110,13 +115,7 @@ footer a {
 }
 
 #balls {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-}
-
-main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
