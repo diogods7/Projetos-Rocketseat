@@ -8,6 +8,12 @@ body{
     margin: 65px auto 0;
 }
 
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 nav{
     display: flex;
     align-items: center;
@@ -29,16 +35,25 @@ h1 {
     width: 490px;
 }
 
-p, footer {
+section p {
     font-size: 14px;
     line-height: 28px;
     color: #7D7987;
+    margin: 40px 0;
 }
 
-button {
-    text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
+footer {
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 80px;
 }
+
+footer a{
+    color: #1F1534;
+    text-decoration: none;
+}
+
 
 h1 span{
     color: #89C5CC;
@@ -56,4 +71,23 @@ ul li a:hover{
 
 h1,ul {
     font-family: 'Mulish', sans-serif;
+}
+
+button {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 4px;
+    background: #69B99D;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 32px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45806b;
 }
