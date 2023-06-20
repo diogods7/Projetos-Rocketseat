@@ -2,11 +2,13 @@ body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+    min-height: 100vh;
 }
 
 .page{
     width: 1000px;
-    margin: 65px auto 0;
+    margin: 0 auto;
+    padding: 65px;
 }
 
 nav{
@@ -80,10 +82,21 @@ a{
     text-decoration: none;
 }
 
+ul li a {
+    opacity: 0.5;
+}
+
 a:hover{
     font-weight: bold;
+    opacity: 1;
 }
 
 h1,ul {
     font-family: 'Mulish', sans-serif;
+}
+
+#balls {
+    position: fixed;
+    right: 0;
+    bottom: 0;
 }
