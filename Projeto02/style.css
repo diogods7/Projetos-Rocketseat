@@ -105,3 +105,9 @@ button {
 button:hover {
     background: #45806b;
 }
+
+#balls{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
