@@ -1,11 +1,14 @@
 body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+    min-height: 100vh;
 }
 
 .page{
     width: 1000px;
-    margin: 65px auto 0;
+    margin: 0 auto;
+    padding: 65px;
 }
 
 main {
@@ -19,6 +22,12 @@ nav{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 55px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 ul {
@@ -60,13 +69,18 @@ h1 span{
     font-weight: bold;
 }
 
-ul li a{
+a{
     color: #1F1534;
     text-decoration: none;
 }
 
-ul li a:hover{
+ul li a {
+    opacity: 0.5;
+}
+
+a:hover{
     font-weight: bold;
+    opacity: 1;
 }
 
 h1,ul {
