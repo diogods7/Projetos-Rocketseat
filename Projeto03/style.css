@@ -19,7 +19,7 @@ body::before {
 	margin: 0 auto 42px;
 }
 
-header{
+header {
 	width: 320px;
 	margin-top: 74px;
 }
@@ -43,4 +43,20 @@ form {
 	background: #FAFAFC;
 	min-height: 300px;
 	border-radius: 8px;
+	padding: 64px;
+}
+
+fieldset {
+	border: none;
+}
+
+fieldset legend {
+	font-family: 'Archivo', sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 34px;
+	color: #32264D;
+	width: 100%;
+	border-bottom: 1px solid #e6e6f0;
+	padding-bottom: 16px;
 }
