@@ -44,8 +44,33 @@
 						<label for="event-extra">Informações extras</label>
 						<textarea id="event-extra"></textarea>
 					</div>
+
+					<div class="input-wrapper">
+						<label for="event-category">Categoria</label>
+						<select id="event-category">
+							<option value="Live">Ao Vivo</option>
+							<option value="podcast">Podcast</option>
+							<option value="mentorship">Mentoria</option>
+						</select>
+					</div>
 				</div>
 
+			</fieldset>
+
+			<fieldset>
+				<div class="fieldset-wrapper">
+					<legend>Privacidade</legend>
+
+					<div class="input-wrapper">
+						<label for="event-email">Email do administrador <span>(digite um email válido)</span></label>
+						<input type="email" id="event-email"/>
+					</div>
+
+					<div class="input-wrapper">
+						<label for="event-password">Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span></label>
+						<input type="password" id="event-password"/>
+					</div>
+				</div>
 			</fieldset>
 
 		</form>
