@@ -195,7 +195,7 @@ footer {
 	margin-bottom: 100px;
 }
 
-footer .button {
+footer button {
 	height: 56px;
 	border-radius: 8px;
 	background: #04D361;
@@ -207,7 +207,7 @@ footer .button {
 	color: #FFF;
 }
 
-footer .button:hover {
+footer button:hover {
 	background: #0e703a;
 }
 
