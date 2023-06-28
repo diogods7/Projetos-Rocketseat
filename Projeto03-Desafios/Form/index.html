@@ -24,7 +24,7 @@
 			<fieldset>
 				<div class="fieldset-dig">
 
-					<legend>Informações pessoais</legend>
+					<legend class="first-legend">Informações pessoais</legend>
 					<div class="inputs">
 							<div class="col-name">
 								<div class="input-dig">
@@ -39,15 +39,65 @@
 							</div>
 		
 							<div class="input-dig">
-								<label for="lastname-dig">Sobrenome</label>
-								<input type="text" id="lastname-dig" />
+								<label for="email-dig">Email <span>(digite um email válido)</span></label>
+								<input type="email" id="email-dig" />
 							</div>
 					</div>
 				</div>
 
 			</fieldset>
-		</form>
+			<fieldset>
+				<legend>Informações do mentor</legend>
+				<div class="line"></div>
 
+				<div class="inputs">
+					<div class="input-dig">
+						<label for="mentor">Selecione quem foi o seu mentor</label>
+						<select id="mentor">
+							<option value="Diogo">Diogo</option>
+							<option value="Pascoa">Pascoa</option>
+							<option value="Sigmon">Sigmon</option>
+						</select>
+					</div>
+
+					<div class="input-dig">
+						<label for="feedback">Feedback sobre o mentor</label>
+						<textarea id="feedback"></textarea>
+					</div>
+
+				<div class="checkbox-dig">
+					<input type="checkbox" id="questions">
+					<label for="questions">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+				</div>
+				</div>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Agendando próxima mentoria</legend>
+				<div class="line"></div>
+				
+				<div class="inputs">
+					<div class="col-date">
+						<div class="input-dig">
+							<label for="date">Data <span>(DD/MM/AAAA)</span></label>
+							<input type="date" id="date">
+						</div>
+						<div class="col-datetime">
+							<div class="input-dig">
+								<label for="date-time-start">Das</label>
+								<input type="datetime" id="date">
+							</div>
+							<div class="input-dig">
+								<label for="date-time-end">Até</label>
+								<input type="datetime" id="date-time-end">
+							</div>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+
+			<button type="button">Salvar</button>
+		</form>
 	</div>
 </body>
 
