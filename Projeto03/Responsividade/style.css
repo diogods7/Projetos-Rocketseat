@@ -2,10 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
   --clr-text: hsl(13, 61%, 40%);
+  font-size: 6.25%;
 }
 
 body {
@@ -14,47 +18,47 @@ body {
 }
 
 main {
-  padding: 53px 37px;
+  padding: 53rem 37rem;
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 28rem;
 }
 
-p {
-  font-size: 14px;
+p, ul, ol, strong {
+  font-size: 14rem;
 }
 
 
 .informations {
   display: flex;
   flex-direction: column;
-  gap: 46px;
+  gap: 46rem;
 }
 
 .mode {
-  margin-top: 34px;
+  margin-top: 34em;
   display: flex;
   flex-direction: column;
 }
 
 .mode strong {
-  margin-top: 36px;
+  margin-top: 36rem;
 }
 
 .mode ul, .mode ol {
-  margin-left: 20px;
+  margin-left: 20rem;
 }
 
 button {
-  margin-top: 54px;
-  width: 94px;
-  height: 31px;
+  margin-top: 54rem;
+  width: 94rem;
+  height: 31rem;
   border: none;
   background: var(--clr-text);
-  border-radius: 6px;
-  font-size: 10px;
-  line-height: 17px;
+  border-radius: 6rem;
+  font-size: 10rem;
+  line-height: 17rem;
   color: #fff;
 }
 
@@ -64,33 +68,33 @@ button {
   }
   main {
     display: flex;
-    max-width: 1150px;
+    max-width: 1150rem;
     align-items: baseline;
     justify-content: space-between;
     margin: auto;
   }
 
   .informations {
-    max-width: 435px;
-    max-height: 250px;
+    max-width: 435rem;
+    max-height: 250rem;
   }
 
   .mode{
-    max-width: 470px;
+    max-width: 470rem;
   }
   
   button {
-    margin-top: 54px;
-    width: 133px;
-    height: 45px;
-    font-size: 14px;
-    line-height: 24px;
+    margin-top: 54rem;
+    width: 133rem;
+    height: 45rem;
+    font-size: 14rem;
+    line-height: 24rem;
   }
   p, ol, ul {
-    font-size: 20px;
+    font-size: 20rem;
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 40rem;
   }
 }
