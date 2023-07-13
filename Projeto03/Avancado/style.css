@@ -6,10 +6,11 @@
 
 body {
   background: #F5F5F5;
+  font-family: 'Mulish';
 }
 
+
 :root {
-  overflow-x: hidden;
   font-size: 6.25%;
 }
 
@@ -19,8 +20,8 @@ footer {
 }
 
 
-header, footer, h1, main {
-  padding: 0 112em;
+header, h1, main {
+  padding: 0 70rem;
 }
 
 header {
@@ -29,9 +30,103 @@ header {
   padding-top: 16em;
   padding-bottom: 16em;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 header img {
   width: 40em;
   height: 40em;
+}
+
+a, h3 {
+  font-size: 18em;
+}
+
+a {
+  text-decoration: none;
+  color: #8D8D99;
+}
+
+a:hover {
+  color: #202024;
+  font-weight: 700;
+}
+
+header input{
+  font-size: 16em;
+  line-height: 16em;
+}
+
+header input{
+  height: 48rem;
+  width: 650rem;
+  border: none;
+  background: hsla(0, 0%, 93%, 1);
+  padding: 16rem;
+  border-radius: 5rem;
+}
+
+h1 {
+  font-size: 24em;
+  margin-top: 36rem;
+}
+
+main {
+  margin-top: 36rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 21px
+}
+
+.card {
+  width: 390rem;
+  background: #FFF;
+  max-height: 290rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 13rem;
+  align-items: flex-start;
+  border-radius: 8rem;
+  
+}
+
+.card h3, .card span {
+  margin-left: 22rem;
+}
+
+.card span{
+  margin-bottom: 22rem;
+}
+
+span {
+  font-size: 12rem;
+  text-transform: uppercase;
+  width: 38rem;
+  height: 20rem;
+  background: #F5F5F5;
+  border-radius: 5rem;
+  text-align: center;
+}
+
+.card img {
+  max-height: 194em;
+  border-radius: 8rem 8rem 0 0;
+}
+
+footer {
+  margin-top: 64rem;
+  height: 70rem;
+  color: #323238;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 16rem;
+}
+
+footer p {
+  font-size: 16rem;
+  line-height: 16rem;
 }
