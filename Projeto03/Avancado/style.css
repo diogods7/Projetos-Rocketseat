@@ -4,3 +4,34 @@
   box-sizing: border-box;
 }
 
+body {
+  background: #F5F5F5;
+}
+
+:root {
+  overflow-x: hidden;
+  font-size: 6.25%;
+}
+
+header,
+footer {
+  background: #FFF;
+}
+
+
+header, footer, h1, main {
+  padding: 0 112em;
+}
+
+header {
+  display: flex;
+  gap: 75em;
+  padding-top: 16em;
+  padding-bottom: 16em;
+  align-items: center;
+}
+
+header img {
+  width: 40em;
+  height: 40em;
+}
