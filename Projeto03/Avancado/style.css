@@ -6,7 +6,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
+body, input {
   background: #F5F5F5;
   font-family: 'Mulish';
 }
@@ -16,17 +16,18 @@ body {
   font-size: 6.25%;
 }
 
+.container {
+  padding-left: 70rem;
+  padding-right: 70rem;
+}
+
 header,
 footer {
   background: #FFF;
 }
 
-
-header, h1, main {
-  padding: 0 70rem;
-}
-
 header {
+  width: 100%;
   display: flex;
   gap: 75em;
   padding-top: 16em;
@@ -38,6 +39,13 @@ header {
 header img {
   width: 40em;
   height: 40em;
+}
+
+.perfil {
+  width: 42rem;
+  height: 42rem;
+  border-radius: 50%;
+  border: #202024 1px solid;
 }
 
 a, h3 {
@@ -54,18 +62,24 @@ a:hover {
   font-weight: 700;
 }
 
-header input{
-  font-size: 16em;
-  line-height: 16em;
+.busca label{
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
 }
 
-header input{
+
+.busca input{
+  font-size: 16em;
+  line-height: 16em;
   height: 48rem;
   width: 650rem;
   border: none;
   background: hsla(0, 0%, 93%, 1);
   padding: 16rem;
   border-radius: 5rem;
+  opacity: 0.6;
 }
 
 h1 {
@@ -73,11 +87,11 @@ h1 {
   margin-top: 36rem;
 }
 
-main {
+main .container{
   margin-top: 36rem;
   display: grid;
   grid-template-columns: repeat(3, 390rem);
-  gap: 21px
+  gap: 21rem;
 }
 
 .card {
@@ -88,7 +102,7 @@ main {
   gap: 13rem;
   align-items: flex-start;
   border-radius: 8rem;
-  
+  overflow: hidden;
 }
 
 .card h3, .card span {
@@ -111,7 +125,14 @@ span {
 
 .card img {
   max-height: 194em;
-  border-radius: 8rem 8rem 0 0;
+  position: relative;
+  z-index: 1;
+  transition: all 200ms ease-in-out;
+}
+
+.card img:hover {
+  filter: hue-rotate(7deg) saturate(101%) contrast(130%);
+  transform: rotate(-2deg) scale(1.1);
 }
 
 footer {
