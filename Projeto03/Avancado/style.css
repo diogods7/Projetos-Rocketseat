@@ -17,8 +17,10 @@ body, input {
 }
 
 .container {
-  padding-left: 70rem;
-  padding-right: 70rem;
+  padding-left: 120rem;
+  padding-right: 120rem;
+  align-items: center;
+  align-content: center;
 }
 
 header,
@@ -27,13 +29,11 @@ footer {
 }
 
 header {
-  width: 100%;
   display: flex;
-  gap: 75em;
   padding-top: 16em;
   padding-bottom: 16em;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 header img {
@@ -90,7 +90,7 @@ h1 {
 main .container{
   margin-top: 36rem;
   display: grid;
-  grid-template-columns: repeat(3, 390rem);
+  grid-template-columns: repeat(3, 1fr);
   gap: 21rem;
 }
 
@@ -124,7 +124,8 @@ span {
 }
 
 .card img {
-  max-height: 194em;
+  height: 210rem;
+  width: 420rem;
   position: relative;
   z-index: 1;
   transition: all 200ms ease-in-out;
@@ -142,12 +143,41 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
-  align-items: center;
   padding: 16rem;
+  justify-content: center;
 }
 
 footer p {
   font-size: 16rem;
   line-height: 16rem;
 }
+
+/* -- ANIMATIONS --*/
+
+header {
+  --translate-y: -100%;
+  animation: delay .4s;
+}
+
+footer {
+  --translate-y: 100%;
+  animation: delay .4s;
+}
+
+.card {
+  --delay: .4s;
+  animation: fade .4s var(--delay) backwards;
+}
+
+@keyframes delay {
+  0% {
+    transform: translateY(var(--translate-y));
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: scale(.2);
+  }
+} 
