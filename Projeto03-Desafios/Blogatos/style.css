@@ -7,7 +7,9 @@
 :root {
   font-size: 6.25%;
   --bg-blue: hsl(195, 91%, 25%);
+  --bg-blue-focus: hsl(195, 61%, 13%);
   --color-base-white: white;
+  overflow-x: hidden;
 }
 
 body{
@@ -81,6 +83,10 @@ button {
   margin-top: 8rem;
 }
 
+button:hover {
+  background: var(--bg-blue-focus);
+}
+
 footer {
   text-align: center;
   margin-top: 40rem;
@@ -129,20 +135,33 @@ main > img:nth-child(1) {
 
 
 @media (min-width:500px) {
-  .container {
+  .container{
+    padding: 0;
+  }
+
+  header.container, footer.container {
     padding: 16rem 110rem;
+  }
+
+  .section {
+    padding: 16rem 110rem;
+    width: 100vw;
   }
   
   header {
     grid-area: header;
   }
   
-  main {
+  main  {
     grid-area: main;
   }
   
   aside {
     grid-area: aside;
+  }
+
+  .section{
+    grid-area: section;
   }
   
   footer {
@@ -152,18 +171,44 @@ main > img:nth-child(1) {
   body {
     grid-template-areas: 
     "header header"
-    "main aside"
+    "section section"
     "footer footer";
   }
 
+  .section {
+    display: grid;
+    grid-template-areas: "main aside";
+    gap: 34rem;
+  }
+
+  .titulo {
+    display: flex;
+    align-items: center;
+    margin: 32rem 0;
+  }
+
+  .titulo h1 {
+    margin-right: 366rem;
+  }
+
+  button + button {
+    margin-left: 12rem;
+  }
+  button {
+    margin-top: 0;
+  }  
+
   main > img:nth-child(1) {
     max-width: 800rem;
-    padding-left: 110rem;
-    padding-top: 40rem;
   }
 
   header input {
     min-width: 400rem;
     width: calc(100vw - 40vw);
   }
+
+  main {
+    max-width: 800rem;
+  }
+
 }
