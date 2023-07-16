@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 6.25%;
+  --bg-blue: hsl(195, 91%, 25%);
+  --color-base-white: white;
+}
+
+body{
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-rows: max-content 1fr max-content max-content;
+  font-family: 'Mulish';
+}
+
+.container {
+  padding: 16rem 28rem;
+}
+
+header, footer {
+  background: var(--bg-blue);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header label {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  opacity: 0;
+}
+
+header input {
+  padding-left: 16rem;
+  font-size: 16rem;
+  font-family: 'Mulish';
+  height: 40rem;
+  border: none;
+  border-radius: 4rem;
+  opacity: 0.2;
+  color: var(--color-base-white);
+  width: 240rem;
+}
+
+.perfil, button {
+  height: 40rem;
+  width: 40rem;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 24rem;
+  line-height: 160%;
+}
+
+h2 {
+  font-size: 18rem;
+}
+
+main p, footer { 
+  font-size: 16rem;
+  line-height: 160%;
+}
+
+footer {
+  color: var(--color-base-white);
+}
+
+button {
+  border-radius: 50%;
+  border: none;
+  background: var(--bg-blue); 
+  margin-top: 8rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40rem;
+}
+
+main p {
+  margin-top: 30rem;
+}
+
+aside p {
+  font-size: 14rem;
+}
+ 
+main > img:nth-child(1) {
+  max-width: 500em;
+}
+
+.artigo {
+  margin-top: 32rem;
+  display: grid;
+  gap:40rem;
+  grid-template-rows: 1fr 90rem;
+}
+
+.item img {
+  grid-area: img;
+}
+
+.item h2 {
+  grid-area: titulo;
+}
+
+.item p {
+  grid-area: texto;
+}
+
+.item {
+  display: grid;
+  column-gap: 16rem;
+
+  grid-template-areas: 
+  "img titulo"
+  "img texto";
+}
+
+
+
+@media (min-width:500px) {
+  .container {
+    padding: 16rem 110rem;
+  }
+  
+  header {
+    grid-area: header;
+  }
+  
+  main {
+    grid-area: main;
+  }
+  
+  aside {
+    grid-area: aside;
+  }
+  
+  footer {
+    grid-area: footer;
+  }
+  
+  body {
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+  }
+
+  main > img:nth-child(1) {
+    max-width: 800rem;
+    padding-left: 110rem;
+    padding-top: 40rem;
+  }
+
+  header input {
+    min-width: 400rem;
+    width: calc(100vw - 40vw);
+  }
+}
