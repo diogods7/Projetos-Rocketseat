@@ -1,48 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Universe</title>
 </head>
+
 <body>
   <header>
-    <img src="./img/universo.png">
-    <h1>Explore sem limites</h1>
-    <h2>Porque o aprendizado é contínuo</h2>
-    <img src="./img/seta.png">
+    <div class="container">
+      <figure>
+        <img src="./img/universo.png">
+      </figure>
+      <h1>Explore sem limites</h1>
+      <h2>Porque o aprendizado é contínuo</h2>
+      <figure>
+        <img src="./img/seta.png">
+      </figure>
+    </div>
   </header>
   <main>
-    <article class="cards">
-      <div class="card">
-          
-      </div>
-    </article>
+    <div class="container">
 
-    <article>
-      <legend>Entre em contato</legend>
-      <fieldset>
-        <div class="inputs">
-          <label for="name">Seu nome</label>
-          <input type="text" id="name" placeholder="Seu nome">
+      <article class="cards">
+        <div class="card">
+          <figure>
+            <img src="./img/planeta amarelo.png">
+          </figure>
+          <h1>Não pare nunca</h1>
+          <p>Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca".
+            Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.</p>
         </div>
-
-        <div class="inputs">
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Seu nome">
+  
+        <div class="card">
+          <figure>
+            <img src="./img/planeta amarelo.png">
+          </figure>
+          <h1>Só volta</h1>
+          <p>Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar. Às vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.</p>
         </div>
-
-        <div class="inputs">
-          <label for="mensage">Mensagem</label>
-          <textarea name="mensage" id="mensage" cols="30" rows="10" placeholder="Digite sua mensagem aqui..."></textarea>
+  
+        <div class="card">
+          <figure>
+            <img src="./img/planeta amarelo.png">
+          </figure>
+          <h1>Siga seu ritmo</h1>
+          <p>Avançar pouco a pouco mantém progresso constante em objetivos, evitando parar ou desistir. Mesmo pequenos passos nos aproximam do destino e motivam a continuidade. Não subestime o poder de cada ação rumo ao objetivo final.</p>
         </div>
-      </fieldset>
-
-      <button>Enviar mensagem</button>
+      </article>
+  
+      <article>
+        <legend>Entre em contato</legend>
+        <fieldset>
+          <div class="inputs">
+            <label for="name">Seu nome</label>
+            <input type="text" id="name" placeholder="Seu nome">
+          </div>
+  
+          <div class="inputs">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Seu nome">
+          </div>
+  
+          <div class="inputs">
+            <label for="mensage">Mensagem</label>
+            <textarea name="mensage" id="mensage" cols="30" rows="10"
+              placeholder="Digite sua mensagem aqui..."></textarea>
+          </div>
+        </fieldset>
+  
+        <button>Enviar mensagem</button>
+      </article>
+    </div>
   </main>
 
-  <footer>© 2023 - Rocketseat Explorer</footer>
+  <footer>
+    <div class="container">
+      © 2023 - Rocketseat Explorer
+    </div>
+  </footer>
+      
 
 </body>
+
 </html>
