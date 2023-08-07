@@ -4,20 +4,22 @@
   padding: 0;
 }
 
-:root{
+:root {
   font-size: 6.25%;
   font-family: 'Mulish';
   --clr-pink: hsl(320, 69%, 42%);
   --clr-blue: hsl(244, 38%, 28%);
+  --clr-white: hsl(255, 0%, 100%);
 }
 
-.container{
+.container {
   padding: 0 32rem;
 }
 
-header{
+header {
   display: flex;
   text-align: center;
+  flex-direction: column;
 }
 
 header img {
@@ -25,11 +27,27 @@ header img {
 }
 
 header h1 {
+  margin-top: 20rem;
   font-size: 32rem;
   color: var(--clr-pink);
+  font-weight: 800;
 }
 
 header h2 {
   font-size: 20rem;
   color: var(--clr-blue);
+  margin-bottom: 35rem;
+}
+
+.cards {
+  margin-top: 94rem;
+  background: var(--clr-blue);
+  display: grid;
+  padding-top: 52rem;
+  padding-bottom: 52rem;
+  column-gap: 50rem;
+}
+
+.card {
+  background: var(--clr-white);
 }
