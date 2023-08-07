@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
@@ -10,6 +12,7 @@
   --clr-pink: hsl(320, 69%, 42%);
   --clr-blue: hsl(244, 38%, 28%);
   --clr-white: hsl(255, 0%, 100%);
+  --clr-linear: hsl(260, 50%, 38%);
 }
 
 .container {
@@ -22,8 +25,8 @@ header {
   flex-direction: column;
 }
 
-header img {
-  max-width: 80vw;
+#astro img{
+  width: 375rem;
 }
 
 header h1, h1 {
@@ -124,4 +127,24 @@ input {
 
 textarea {
   padding-top: 12rem;
+}
+
+button {
+  margin-top: 24rem;
+  background: var(--clr-blue);
+  border: none;
+  border-radius: 16rem;
+  width: 152rem;
+  height: 45rem;
+  color: var(--clr-white);
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  justify-content: center;
+  color: var(--clr-white);
+  background: linear-gradient(var(--clr-linear), var(--clr-blue));
+  font-size: 20rem;
+  padding: 32rem;
 }
