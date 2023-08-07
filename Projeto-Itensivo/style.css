@@ -26,7 +26,7 @@ header img {
   max-width: 80vw;
 }
 
-header h1 {
+header h1, h1 {
   margin-top: 20rem;
   font-size: 32rem;
   color: var(--clr-pink);
@@ -43,11 +43,85 @@ header h2 {
   margin-top: 94rem;
   background: var(--clr-blue);
   display: grid;
-  padding-top: 52rem;
-  padding-bottom: 52rem;
-  column-gap: 50rem;
+  grid-template-columns: 350rem;
+  padding: 52rem 0;
+  row-gap: 50rem;
+  justify-content: center;
 }
 
 .card {
   background: var(--clr-white);
+  border-radius: 20rem;
+  padding: 27rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 80rem;
+  height: 80rem;
+}
+
+.card h1 {
+  font-size: 30rem;
+  color: var(--clr-pink);
+  font-weight: 800;
+  margin-top: 30rem;
+}
+
+.card p {
+  font-size: 16rem;
+  color: var(--clr-blue);
+  font-weight: 600;
+  margin-top: 20rem;
+}
+
+.inputs {
+  margin-top: 24rem;
+}
+
+fieldset {
+  border: none;
+  padding: 70rem 0;
+}
+
+label {
+  position: absolute;
+  z-index: -1;
+  height: 1px;
+  width: 1px;
+  margin-left: 10px;
+}
+
+input, textarea {
+  text-decoration: none;
+  font-size: 16rem;
+  color: var(--clr-blue);
+  font-family: 'Mulish';
+  font-weight: 700;
+  width: 100%;
+  border-radius: 16rem;
+  border: 1px solid;
+  padding-left: 16rem;
+}
+
+input {
+  height: 48rem;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: 14rem; 
+  padding-left: 50rem;
+}
+
+#user input {
+  background-image: url("./img/user.png");
+}
+
+#email input {
+  background-image: url("./img/arroba.png");
+}
+
+textarea {
+  padding-top: 12rem;
 }
